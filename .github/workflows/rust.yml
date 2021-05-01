@@ -27,18 +27,20 @@ jobs:
       run: cargo build --verbose
     - name: Run tests
       run: cargo test --verbose
-    - uses: actions/upload-artifact@v2
-      with:
-        name: cleric-bin
-        path: ./target/debug/deps
+#    - uses: actions/upload-artifact@v2
+#      with:
+#        name: cleric-bin
+#        path: ./target/debug/deps
   
   docker:
     runs-on: ubuntu-latest
     needs: build
+    if: false
     
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/download-artifact@v2
+
+- uses: actions/download-artifact@v2
       with:
         name: cleric-bin
     -
