@@ -2,7 +2,7 @@
 name = "cleric"
 version = "0.1.0"
 authors = ["Brandon High <highb@github"]
-edition = "2021"
+edition = "2018"
 
 [dependencies]
 serenity = "0.10"
