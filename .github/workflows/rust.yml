@@ -30,7 +30,7 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: cleric-bin
-        path: cleric
+        path: ./target/debug/deps
   
   docker:
     runs-on: ubuntu-latest
