@@ -1,13 +1,16 @@
-extend = "../../Makefile.toml"
+[tasks.build]
+command = "cargo"
+args = ["build"]
 
-[tasks.examples_build]
-alias = "build"
+[tasks.build_release]
+extend = "build"
+args = ["build", "--release"]
 
-[tasks.examples_build_release]
-alias = "build_release"
+[tasks.run]
+command = "cargo"
+args = ["run"]
 
-[tasks.examples_run]
-alias = "run"
-
-[tasks.examples_run_release]
-alias = "run_release"
+[tasks.run_release]
+extend = "run"
+args = ["run", "--release"]
+dependencies = ["build"]
