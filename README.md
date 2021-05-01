@@ -1,0 +1,2 @@
+# cleric
+A discord bot
