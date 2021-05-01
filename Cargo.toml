@@ -1,9 +1,9 @@
 [package]
-name = "e01_basic_ping_bot"
+name = "cleric"
 version = "0.1.0"
-authors = ["my name <my@email.address>"]
-edition = "2018"
+authors = ["Brandon High <highb@github"]
+edition = "2021"
 
 [dependencies]
-serenity = { path = "../../", default-features = false, features = ["client", "gateway", "rustls_backend", "model"] }
+serenity = "0.10"
 tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
